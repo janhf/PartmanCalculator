@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ *    PartmanCalculator - Calculates partition sizes with the algorithm
+ *     of debian installers partitioner
+ *    Copyright (C) 2015  Jan-Philipp Hülshoff <github@bklosr.de>
+ *
+ *    This program is free software: you can redistribute it and/or modify
+ *    it under the terms of the GNU General Public License as published by
+ *    the Free Software Foundation, either version 3 of the License, or
+ *    (at your option) any later version.
+ *
+ *    This program is distributed in the hope that it will be useful,
+ *    but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *    GNU General Public License for more details.
+ *
+ *    You should have received a copy of the GNU General Public License
+ *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *
+-->
+<jnlp
+  spec="1.0+"
+  codebase="http://janhf.github.io/PartmanCalculator/"
+  href="PartmanCalculator.jnlp">
+  <information>
+    <title>Partman Calculator</title>
+    
+    <vendor>Jan-Philipp Hülshoff</vendor>
+    <homepage href="http://janhf.github.io/PartmanCalculator/"/>
+    <description>Calculates partition sizes like the debian installer</description>
+    <description kind="short">Calculates partition sizes like the debian installer</description>
+    <!--icon kind="splash" href="images/splash.png"/>
+    
+    <icon width="512" height="512" href="images/icon_512.png"/>
+    <icon width="256" height="256" href="images/icon_256.png"/>
+    <icon width="128" height="128" href="images/icon_128.png"/>
+    <icon width="64" height="64" href="images/icon_064.png"/>
+    <icon width="32" height="32" href="images/icon_032.png"/>
+    <icon width="16" height="16" href="images/icon_016.png"/-->
+    <!--offline-allowed/-->
+    <shortcut>
+      <desktop/>
+      <menu submenu="bklosr.de"/>
+    </shortcut>
+  </information>
+  <security>
+    <all-permissions/>
+  </security>
+  <resources>
+    <j2se href="http://java.sun.com/products/autodl/j2se" version="1.5+"/>
+    <jar href="jar/PartmanCalculator.jar"/>
+    <!--jar href="lib/Filters.jar"/>
+    <jar href="lib/MultipleGradientPaint.jar"/-->
+    <jar href="lib/beansbinding-1.2.1.jar"/>
+    <!--jar href="lib/derbyclient.jar"/>
+    <jar href="lib/jmock-1.1.0RC1.jar"/>
+    <jar href="lib/junit-4.0-src.jar"/>
+    <jar href="lib/junit-4.0.jar"/>
+    <jar href="lib/mysql-connector-java-5.1.6-bin.jar"/>
+    <jar href="lib/swing-layout.jar"/>
+    <jar href="lib/swing-worker.jar"/>
+    <jar href="lib/swingx-0.9.4.jar"/>
+    <jar href="lib/swingx-beaninfo-0.9.4.jar"/>
+    <jar href="lib/toplink-essentials-agent.jar"/>
+    <jar href="lib/toplink-essentials.jar"/>
+    <jar href="lib/ostermillerutils_1_07_00.jar"/-->
+  </resources>
+  <application-desc/>
+</jnlp>
