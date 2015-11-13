@@ -44,13 +44,14 @@
       <attribute name="Built-By" value="${user.name}" />
       <attribute name="Main-Class" value="de.upb.phys.partmancalc.PartmanCalculator" />
       <attribute name="Class-Path" value="lib/beansbinding-1.2.1.jar" />
+      <attribute name="Permissions" value="all-permissions" />
     </manifest>
   </jar>
-  <signjar jar="./jar/PartmanCalculator.jar" alias="jp" storepass="jp" keystore="./selfsigned.jks" keypass="password" verbose="false"/>
+  <signjar jar="./jar/PartmanCalculator.jar" alias="codesigning3" storepass="codesigning3" keystore="${user.home}/Documents/FREIZEIT/codesigning3.jks" keypass="codesigning3" verbose="false"/>
    </target>
 
 <target name="signlibs" description="Sign the libraries used by the programm">
-	<signjar jar="./lib/*.jar" alias="jp" storepass="jp" keystore="./selfsigned.jks" keypass="password" verbose="false"/>
+	<signjar jar="./lib/*.jar" alias="codesigning3" storepass="codesigning3" keystore="${user.home}/Documents/FREIZEIT/codesigning3.jks" keypass="codesigning3" verbose="false"/>
 </target>
  
 <target name="build" depends="compile,jar" description="Kompiliert,Erstellt .jar,Erstellt javadoc">
